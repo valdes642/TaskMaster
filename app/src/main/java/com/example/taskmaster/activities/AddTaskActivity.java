@@ -5,5 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.taskmaster.R;
-public class AddTaskActivity {
+public class AddTaskActivity extends AppCompatActivity {
+    @Override
+    
 }
