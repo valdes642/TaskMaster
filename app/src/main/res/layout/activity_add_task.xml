@@ -10,30 +10,36 @@
         android:stretchColumns="1">
 
         <TableRow>
-            <TextView android:text="Título:" />
+            <TextView android:text="@string/task_title_label" />
             <EditText android:id="@+id/etTitle" />
         </TableRow>
 
         <TableRow>
-            <TextView android:text="Categoría:" />
+            <TextView android:text="@string/task_category_label" />
             <Spinner android:id="@+id/spCategory" />
         </TableRow>
 
         <TableRow>
-            <TextView android:text="Prioridad:" />
+            <TextView android:text="@string/task_priority_label" />
             <RadioGroup android:id="@+id/rgPriority">
-                <RadioButton android:text="Alta" />
-                <RadioButton android:text="Baja" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priority_high" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priority_low" />
             </RadioGroup>
         </TableRow>
 
         <TableRow>
-            <CheckBox android:id="@+id/cbReminder" android:text="¿Agregar Recordatorio?" />
+            <CheckBox android:id="@+id/cbReminder" android:text="@string/add_reminder" />
         </TableRow>
 
         <Button
             android:id="@+id/btnSave"
             android:layout_marginTop="16dp"
-            android:text="Guardar" />
+            android:text="@string/save" />
     </TableLayout>
 </ScrollView>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">TaskMaster</string>
+    <string name="create_new_task">Crear Nueva Tarea</string>
+    <string name="task_title_label">Título:</string>
+    <string name="task_category_label">Categoría:</string>
+    <string name="task_priority_label">Prioridad:</string>
+    <string name="priority_high">Alta</string>
+    <string name="priority_low">Baja</string>
+    <string name="add_reminder">¿Agregar Recordatorio?</string>
+    <string name="save">Guardar</string>
+    <string name="task_progress">Progreso de la tarea:</string>
+    <string name="task_importance">Importancia:</string>
 </resources>

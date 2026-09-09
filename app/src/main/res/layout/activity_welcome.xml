@@ -5,7 +5,10 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView android:text="Progreso de la tarea:" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_progress" />
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -14,7 +17,11 @@
         android:max="100"
         android:progress="50" />
 
-    <TextView android:text="Importancia:" android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_importance"
+        android:layout_marginTop="16dp"/>
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
