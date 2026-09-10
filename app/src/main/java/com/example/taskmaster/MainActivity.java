@@ -55,31 +55,28 @@ public class MainActivity extends AppCompatActivity {
         btnSaveTask = findViewById(R.id.btnSaveTask);
         rvTasks = findViewById(R.id.rvTasks);
 
-        // Configurar RecyclerView
+
         taskAdapter = new TaskAdapter(taskList);
         rvTasks.setLayoutManager(new LinearLayoutManager(this));
         rvTasks.setAdapter(taskAdapter);
 
-        // Simular datos iniciales (opcional)
-        // taskList.add(new Task("Ejemplo de Tarea", "General", "Alta", true));
-        // taskAdapter.notifyDataSetChanged();
 
         btnSaveTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String title = etTaskTitle.getText().toString().trim();
                 
-                // Obtener prioridad seleccionada
+
                 String priority = "Baja";
                 int selectedPriorityId = rgPriority.getCheckedRadioButtonId();
                 if (selectedPriorityId == R.id.rbHigh) {
                     priority = "Alta";
                 }
                 
-                // Obtener estado urgente por RatingBar o Prioridad
+
                 boolean isUrgent = priority.equals("Alta") || ratingBar.getRating() >= 4.0;
 
-                // Crear String de estado que combine los datos
+
                 String category = "Categoría Seleccionada";
                 if (spinnerCategory.getSelectedItem() != null) {
                     category = spinnerCategory.getSelectedItem().toString();
@@ -94,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 taskList.add(newTask);
                 taskAdapter.notifyItemInserted(taskList.size() - 1);
                 
-                // Limpiar formulario
+            
                 etTaskTitle.setText("");
                 rgPriority.clearCheck();
                 cbReminder.setChecked(false);
@@ -104,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Inner class Adapter sin necesidad de un archivo adicional, tal cual lo solicitado
     private class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
         private List<Task> tasks;
 
