@@ -10,4 +10,8 @@
     <string name="save">Guardar</string>
     <string name="task_progress">Progreso de la tarea:</string>
     <string name="task_importance">Importancia:</string>
+    <string name="welcome_title">¡Bienvenido a TaskMaster!</string>
+    <string name="welcome_subtitle">Organiza tus tareas diarias de manera eficiente.</string>
+    <string name="enter_app">Ingresar a la App</string>
+    <string name="logo_desc">Logo de la aplicación</string>
 </resources>
