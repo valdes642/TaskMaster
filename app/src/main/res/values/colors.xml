@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Star Wars Theme Colors -->
+    <color name="sw_background">#050505</color>
+    <color name="sw_surface">#111111</color>
+    <color name="sw_red">#E62B25</color>
+    <color name="sw_red_dark">#8B0000</color>
+    <color name="sw_text_primary">#FFFFFF</color>
+    <color name="sw_text_secondary">#888888</color>
+    <color name="sw_accent">#FF2A2A</color>
 </resources>

@@ -1,17 +1,24 @@
 <resources>
     <string name="app_name">TaskMaster</string>
     <string name="create_new_task">Crear Nueva Tarea</string>
-    <string name="task_title_label">Título:</string>
+    <string name="task_title_label">Nombre:</string>
     <string name="task_category_label">Categoría:</string>
     <string name="task_priority_label">Prioridad:</string>
     <string name="priority_high">Alta</string>
     <string name="priority_low">Baja</string>
-    <string name="add_reminder">¿Agregar Recordatorio?</string>
+    <string name="add_reminder">Agregar Recordatorio</string>
     <string name="save">Guardar</string>
     <string name="task_progress">Progreso de la tarea:</string>
     <string name="task_importance">Importancia:</string>
-    <string name="welcome_title">¡Bienvenido a TaskMaster!</string>
+    <string name="welcome_title">Bienvenido</string>
     <string name="welcome_subtitle">Organiza tus tareas diarias de manera eficiente.</string>
-    <string name="enter_app">Ingresar a la App</string>
+    <string name="enter_app">Ingresar</string>
     <string name="logo_desc">Logo de la aplicación</string>
+
+    <string-array name="task_categories">
+        <item>Hogar</item>
+        <item>Estudiantil</item>
+        <item>Trabajo</item>
+        <item>General</item>
+    </string-array>
 </resources>

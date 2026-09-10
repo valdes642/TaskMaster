@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/sw_background"
     android:padding="16dp">
 
     <ScrollView
@@ -18,7 +19,10 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/sw_surface"
+            app:strokeColor="@color/sw_red"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="0dp"
             app:cardElevation="4dp"
             app:contentPadding="16dp">
 
@@ -33,6 +37,10 @@
                     android:text="Crear Nueva Tarea"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="@color/sw_red"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
                     android:layout_marginBottom="12dp"/>
 
                 <EditText
@@ -40,6 +48,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Título de la tarea"
+                    android:textColorHint="@color/sw_text_secondary"
+                    android:textColor="@color/sw_text_primary"
+                    android:fontFamily="sans-serif-condensed"
                     android:layout_marginBottom="8dp"/>
 
                 <TableLayout
@@ -51,17 +62,23 @@
                         android:layout_marginBottom="8dp">
                         <TextView
                             android:text="Categoría:"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@color/sw_text_secondary"
                             android:paddingEnd="8dp"/>
                         <Spinner
                             android:id="@+id/spinnerCategory"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:entries="@array/task_categories"
+                            android:theme="@style/Theme.TaskMaster"/>
                     </TableRow>
 
                     <TableRow
                         android:layout_marginBottom="8dp">
                         <TextView
                             android:text="Prioridad:"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@color/sw_text_secondary"
                             android:paddingEnd="8dp"/>
                         <RadioGroup
                             android:id="@+id/rgPriority"
@@ -70,11 +87,15 @@
                                 android:id="@+id/rbHigh"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textColor="@color/sw_text_primary"
+                                android:fontFamily="sans-serif-condensed"
                                 android:text="Alta"/>
                             <RadioButton
                                 android:id="@+id/rbLow"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textColor="@color/sw_text_primary"
+                                android:fontFamily="sans-serif-condensed"
                                 android:text="Baja"/>
                         </RadioGroup>
                     </TableRow>
@@ -84,12 +105,16 @@
                     android:id="@+id/cbReminder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/sw_text_primary"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Agregar recordatorio"
                     android:layout_marginBottom="12dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/sw_text_secondary"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Progreso inicial:"/>
 
                 <ProgressBar
@@ -99,11 +124,14 @@
                     android:layout_height="wrap_content"
                     android:max="100"
                     android:progress="20"
+                    android:progressTint="@color/sw_red"
                     android:layout_marginBottom="12dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/sw_text_secondary"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Importancia:"/>
 
                 <RatingBar
@@ -112,12 +140,16 @@
                     android:layout_height="wrap_content"
                     android:numStars="5"
                     android:stepSize="1.0"
+                    android:progressTint="@color/sw_red"
+                    android:secondaryProgressTint="@color/sw_red_dark"
                     android:layout_marginBottom="16dp"/>
 
                 <Button
                     android:id="@+id/btnSaveTask"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:letterSpacing="0.1"
                     android:text="Guardar Tarea"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

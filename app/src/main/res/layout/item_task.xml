@@ -21,15 +21,17 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
             android:letterSpacing="0.05"
-            android:textColor="#1E293B" />
+            android:textColor="@color/sw_text_primary" />
 
         <TextView
             android:id="@+id/tvEstadoTarea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:textColor="#64748B"
+            android:textColor="@color/sw_text_secondary"
+            android:fontFamily="sans-serif-condensed"
             android:textAllCaps="true"
             android:letterSpacing="0.05"
             android:layout_marginTop="4dp"/>
@@ -42,7 +44,8 @@
         android:text="ALERTA"
         android:textSize="10sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/sw_text_primary"
         android:letterSpacing="0.1"
         android:background="@drawable/bg_badge_urgente"
         android:paddingStart="12dp"
