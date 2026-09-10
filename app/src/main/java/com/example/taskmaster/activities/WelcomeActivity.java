@@ -26,7 +26,7 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
                 startActivity(intent);
-                finish(); // Para que no pueda volver atrás a esta pantalla
+                finish();
             }
         });
     }
