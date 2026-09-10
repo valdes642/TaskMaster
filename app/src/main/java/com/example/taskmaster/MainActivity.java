@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 taskList.add(newTask);
                 taskAdapter.notifyItemInserted(taskList.size() - 1);
                 
-            
+
                 etTaskTitle.setText("");
                 rgPriority.clearCheck();
                 cbReminder.setChecked(false);
