@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import com.example.taskmaster.MainActivity;
 import com.example.taskmaster.R;
 
 public class WelcomeActivity extends AppCompatActivity {

@@ -18,15 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnCreateTask = findViewById(R.id.btnCreateTask);
+        // Button btnCreateTask = findViewById(R.id.btnCreateTask);
         // Aquí iría la inicialización del RecyclerView y el Adapter
 
-        btnCreateTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddTaskActivity.class);
-                startActivity(intent);
-            }
-        });
+        // btnCreateTask.setOnClickListener removed as AddTaskActivity is removed
     }
 }
